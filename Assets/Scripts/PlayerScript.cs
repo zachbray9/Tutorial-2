@@ -79,7 +79,8 @@ public class PlayerScript : MonoBehaviour
 
         
 
-        if(Input.GetKey("escape")){
+        if(Input.GetKey("escape"))
+        {
             Application.Quit();
         }
     }
@@ -132,7 +133,6 @@ public class PlayerScript : MonoBehaviour
             musicSource.clip = musicClipTwo;
             musicSource.loop = false;
             musicSource.Play();
-            Destroy(this);
         }
     }
 
